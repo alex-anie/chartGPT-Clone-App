@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/resources/imgs/ChatGPT-Green.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChartGPT Clone</title>
+    <meta name="author" content="Alex Anie">
+</head>
+
+<body>
+<div id="overlay" class="hidden w-[100vw] h-[100vh] bg-black opacity-80 absolute z-[-1]"></div>
+
+<div id="wrapper" class="w-[100vw] h-[100vh] flex justify-center items-center">
+
+    <!-- FIRST MODE POP UP -->
+<main id="modelFirst" class="hidden w-[30%] bg-[#1c1d22] text-white text-sm py-4 px-4 rounded-md">
+    <section>
+        <!-- Header section --> 
+        <header>
+            <h1 class="text-xl font-bold my-2">ChatGPT</h1>
+            <hr class="border-[1px] border-[#525361]"/>
+        </header>
+
+        <!-- Body Section -->
+        <div>
+            <p class="font-bold mt-4">This is a free research preview.</p>
+            <div class="flex justify-center bg-[#32333b] rounded-md p-2 mt-2">
+                <div class="text-[1.5em] mr-4 mt-2">🔬</div><div>Our goal is to get external feedback in order to improve our systems and make them safer.</div> 
+            </div>
+
+            <div class="flex justify-center bg-[#32333b] rounded-md p-2 mt-2">
+                <div class="text-[1.5em] mr-4 mt-8">🚨</div> <div>While we have safeguards in place, the system may occasionally generate incorrect or misleading information and produce
+                offensive or biased content. It is not intended to give advice</div>
+            </div>
+        </div>
+
+        <!-- button section -->
+        <div class="flex justify-end">
+            <button id="modelBtnFirst" class=" bg-[#32333b] rounded-md p-2 mt-4 mb-2 border-[1px] border-[#525361]">Next</button>
+        </div>
+    </section>
+</main> <!--End of First Section-->
+
+<!-- SECOND MODEL -->
+<main id="modelSecond" class="hidden w-[30%] bg-[#1c1d22] text-white text-sm py-4 px-4 rounded-md">
+    <section>
+        <!-- Header section -->
+        <header>
+            <h1 class="text-xl font-bold my-2">ChatGPT</h1>
+            <hr class="border-[1px] border-[#525361]" />
+        </header>
+
+        <!-- Body Section -->
+        <div>
+            <p class="font-bold mt-4">How we collect data</p>
+            <div class="flex justify-center bg-[#32333b] rounded-md p-2 mt-2">
+                <div class="text-[1.5em] mr-4 mt-2">🦾</div>
+                <div>Conversations may be reviewed by our AI trainers to improve our systems.</div>
+            </div>
+
+            <div class="flex justify-center bg-[#32333b] rounded-md p-2 mt-2">
+                <div class="text-[1.5em] mr-4 mt-2">🔐</div>
+                <div>Please don't share any sensitive information in your conversations.</div>
+            </div>
+        </div>
+
+        <!-- button section -->
+        <div class="flex justify-between">
+            <button id="modelBtnSecondBack" class="bg-[#32333b] rounded-md p-2 mt-4 mb-2 border-[1px] border-[#525361]">Back</button>
+
+            <button id="modelBtnSecondNext" class=" bg-[#32333b] rounded-md p-2 mt-4 mb-2 border-[1px] border-[#525361]">Next</button>
+        </div>
+    </section>
+</main> <!--End of second section-->
+
+<!-- THIRD SECTION -->
+<main id="modelThird" class="hidden w-[30%] bg-[#1c1d22] text-white text-sm py-4 px-4 rounded-md">
+    <section>
+        <!-- Header section -->
+        <header>
+            <h1 class="text-xl font-bold my-2">ChatGPT</h1>
+            <hr class="border-[1px] border-[#525361]" />
+        </header>
+
+        <!-- Body Section -->
+        <div>
+            <p class="font-bold mt-4">We'd love your feedback!</p>
+            <div class="flex justify-center bg-[#32333b] rounded-md p-2 mt-2">
+                <div class="text-[1.5em] mr-4 mt-2">👍</div>
+                <div>This system is optimized for dialogue. Let us know if a particular response was good or unhelpful.
+                </div>
+            </div>
+
+            <div class="flex justify-center bg-[#32333b] rounded-md p-2 mt-2">
+                <div class="text-[1.5em] mr-4 mt-2">💬</div>
+                <div>Share your feedback in our
+                    <a href="https://discord.com/invite/openai" target="_blank" class="font-bold">Discoud server</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- button section -->
+        <div class="flex justify-between">
+            <button id="modelBtnThirdBack" class="bg-[#32333b] rounded-md p-2 mt-4 mb-2 border-[1px] border-[#525361]">Back</button>
+
+            <button id="modelBtnThirdDone" class=" bg-teal-500 rounded-md p-2 mt-4 mb-2 border-[1px] border-[#525361]">Done</button>
+        </div>
+    </section>
+</main><!--The End of the Third Section-->
+
+</div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

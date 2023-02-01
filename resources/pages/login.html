@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/resources/imgs/ChatGPT-Green.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChartGPT | Login</title>
+    <meta name="author" content="Alex Anie">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body>
+    <main class="w-screen flex justify-center">
+        <section>
+            <!-- Logo Sectioon -->
+            <header class="flex justify-center mt-8">
+                <img src="/resources/imgs/ChatGPT-Black.svg" alt="" class="w-12">
+            </header>
+
+            <!-- Account Creation Information -->
+            <section class="mt-16">
+                <h1 class="text-center text-3xl font-bold text-slate-800">Welcome back</h1>
+            </section>
+
+            <!-- input tag for email Adress -->
+            <section class="">
+                <input type="text" placeholder="Email address" class="block w-full h-12 outline-none border-[1.5px] border-slate-300 rounded-sm px-4 mt-4 focus:border-teal-500 placeholder:text-slate-500 placeholder:text-lg">
+                
+                <!-- Contnue Button -->
+                <a href="/resources/pages/home.html" class="block mt-8 py-4 px-4 bg-teal-500 hover:bg-teal-600 transition-all ease-linear duration-500 text-white rounded-sm text-center" >Continue</a>
+            </section>
+
+            <!-- alread have an account [Old users] -->
+            <section>
+                <p class="mt-2 text-center text-sm">Already have an account? <a href="/resources/pages/signup.html" class="text-teal-500">Sign up</a></p>
+                <p>
+                    <span id="lineLeft" class="inline-block w-[40%] h-[1px] bg-slate-400"></span> 
+                    <!-- <hr /> -->
+                    <span class="text-sm relative top-1 px-[1em]">OR</span>
+                    <span id="lineRight" class="inline-block w-[40%] h-[1px] bg-slate-400"></span>
+                    <!-- <hr /> -->
+                </p>
+            </section>
+
+            <!-- With with Google or MicroSoft -->
+            <section class="mt-8">
+                <a href="https://login.live.com/oauth20_authorize.srf?client_id=7de44aed-c069-4216-a99c-45957f6c4f17&scope=openid+profile+email+https%3a%2f%2fgraph.microsoft.com%2fUser.Read+https%3a%2f%2fgraph.microsoft.com%2fUser.Read&redirect_uri=https%3a%2f%2fauth0.openai.com%2flogin%2fcallback&response_type=code&state=ZKJ_lJpN-MNKiuGjqTP0fNEIK7QAs7Dz&prompt=login&uaid=637b190176dc410aac576e82c70544f5&msproxy=1&issuer=mso&tenant=consumers&ui_locales=en-US&epct=AQABAAAAAAD--DLA3VO7QrddgJg7WevrZa69udgqAtPldHOL_tIeMaOCbA_6vduqaKSm9OSV7NiBG6syXXVc3A0w5oduhI4Joc_n9IPhkTNihPhhLl59RSDTYGicHdJlaQUz0Ap_FLt1TVtvrtF-a-bVjWG8pXAmmip9VGRWki6e5pWOwkk1jgET9Fpf0s3h1Ckaj7L54FEpNG_fXSpkN1q3-IpTIJX0Eo1Isg9oCtwI1_aTkTsRHSAA&jshs=0#" 
+                
+                class="block text-sm w-full border-[1.5px] border-slate-400 rounded-t-sm py-4 px-6 hover:bg-slate-200">
+                    <img src="/resources/imgs/microsoft.svg" alt="Microsoft logo" class="w-6 inline-block pr-1"> Continue with Microsoft Account
+                </a>
+                <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?login_hint&prompt=login&response_type=code&redirect_uri=https%3A%2F%2Fauth0.openai.com%2Flogin%2Fcallback&scope=email%20profile&state=L5A9Hk6vb6KkUX6Q5SMjpL7r5mG-STMB&client_id=799222349882-ne3i0s9jdm5s0p7ll2d7tlsi1vc1halt.apps.googleusercontent.com&service=lso&o2v=1&flowName=GeneralOAuthFlow" 
+                
+                class="block text-sm w-full border-[1.5px] border-slate-400 rounded-t-sm py-4 px-6 mt-4 hover:bg-slate-200">
+                    <img src="/resources/imgs/google-logo.svg" alt="Google logo" class="w-6 inline-block pr-1"> Continue Google 
+                </a>
+            </section>
+        </section>
+    </main>
+
+
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
